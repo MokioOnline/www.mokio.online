@@ -56,7 +56,7 @@
           <img src="${ROOT}../images/logo.svg" alt="Mokio" class="logo-img">
           <span class="logo-text">Mokio</span>
         </a>
-        <p>Play. Connect. Create.</p>
+        <p>Games. Messaging. Connect.</p>
       </div>`;
   const bottomBlock = `
       <div class="footer-bottom">
@@ -70,9 +70,9 @@
     const links = variant === 'minimal' ? '' : `
       <div class="footer-links">
         <a href="${ROOT}index.html">Home</a>
-        <a href="${ROOT}index.html#features">Features</a>
+        <a href="https://www.mokio.online/index.html#features">Features</a>
         <a href="https://app.mokio.online">Apps</a>
-        <a href="${ROOT}pages/music.html">Music</a>
+        <a href="https://app.mokio.online/apps/crossfire.html">Games</a>
         <a href="${ROOT}pages/messaging.html">Messaging</a>
         ${lastLink}
         <a href="${DONATE}" target="_blank" rel="noopener">Donate</a>

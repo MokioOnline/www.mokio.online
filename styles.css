@@ -824,6 +824,103 @@ ul {
   color: #fff;
 }
 
+.home-apps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.home-app-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.home-app-card:hover,
+.home-app-card:focus-visible {
+  border-color: rgba(110, 124, 240, 0.28);
+  background: #1c2030;
+  transform: translateY(-2px);
+}
+
+.home-app-card:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 3px;
+}
+
+.home-app-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+}
+
+.home-app-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.home-app-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-app-body h3 {
+  margin-bottom: 2px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.home-app-tag {
+  margin-bottom: 6px;
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.home-app-desc {
+  margin-bottom: 10px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.home-app-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(110, 124, 240, 0.12);
+  color: #a8b2f5;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.home-app-arrow {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  font-size: 20px;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.home-app-card:hover .home-app-arrow,
+.home-app-card:focus-visible .home-app-arrow {
+  color: var(--text);
+  transform: translateX(4px);
+}
+
 /* ===== Vision ===== */
 
 .vision {
@@ -1247,6 +1344,17 @@ a.staff-card:hover {
 
   .hero-actions .btn {
     width: 100%;
+  }
+
+  .home-app-card {
+    gap: 14px;
+    padding: 18px;
+  }
+
+  .home-app-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
   }
 
   .waitlist-card {
