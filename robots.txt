@@ -1,0 +1,16 @@
+# robots.txt for www.mokio.online
+# https://www.mokio.online
+
+User-agent: *
+Allow: /
+
+# Staff / internal pages — do not index
+Disallow: /pages/admin
+
+# Common non-public paths
+Disallow: /script/
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Sitemap
+Sitemap: https://www.mokio.online/sitemap.xml
